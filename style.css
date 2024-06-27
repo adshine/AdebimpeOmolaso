@@ -1,0 +1,227 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;900&family=Unbounded:wght@500&display=swap');
+body {
+  padding: 0;
+
+  font-family: 'Inter', sans-serif;
+  font-family: 'Unbounded', cursive;
+  background-color: #000000;
+  overflow: hidden;
+
+}
+.top-part {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+svg{
+  position: absolute;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  margin-left: -12px;
+
+}
+
+main {
+  max-width: 680px;
+  margin:  auto;
+  padding: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.rounded-button {
+  background: rgba(255, 255, 255, 1);
+  border: none;
+  color: #000000;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Unbounded', cursive;
+  letter-spacing: -.25px;
+  
+  border-radius: 30px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Button hover state */
+.rounded-button:hover {
+  background: linear-gradient(
+    156.6deg,
+    #77b30d 15.1%,
+    #004626 120.9%
+  );
+  background-color: rgba(41, 41, 41, 0.8);
+  transform: scale(1.1,1.1);
+}
+
+
+h1 {
+
+font-family: 'Unbounded', cursive !important;
+font-weight: 700; 
+margin: 0px;
+color: #fff;
+font-style: normal;
+font-size: 2.8em;
+line-height: 120%;
+}
+
+p {
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 180%;
+color: #ffffff90;
+max-width: 65%;
+font-family: 'Inter', sans-serif;
+align-self: center;
+}
+.video-container{
+  display: flex;
+  flex-direction: column;
+
+}
+/* Hide video player controls for modern webkit-based browsers */
+video::-webkit-media-controls {
+  display: none;
+}
+
+/* Hide video player controls for older webkit-based browsers */
+video::-webkit-media-controls-enclosure {
+  display: none;
+}
+
+/* Hide video player controls for Firefox */
+video::-moz-media-controls-panel {
+  display: none;
+}
+
+/* Hide video player controls for IE and Edge */
+video::-ms-media-controls {
+  display: none;
+}
+
+/* Hide video player controls for all other browsers */
+/* Show custom controls */
+video.custom-controls {
+  /* display custom controls */
+  display: block;
+}
+.main-body {
+  position: relative;
+}
+.cls-1{
+  scale: 100%;
+  fill: #ededed;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+video {
+  width: 60%;
+  height: auto;
+  object-fit: cover;
+}
+
+button.rounded-button {
+  border: none;
+}
+
+button.rounded-button:hover {
+  border: none;
+}
+
+.gif-container {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.gif-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  animation: animateGif 2s linear infinite;
+}
+
+@keyframes animateGif {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+    line-height: 1.25em;
+    letter-spacing: -1.5px;
+  }
+
+  .header-ctas {
+    display: block;
+    column-gap: 24px;
+  }
+
+  button.rounded-button {
+    margin-top: 16px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  h1 {
+    font-size: 1.5em;
+    line-height: 1.25em;
+    letter-spacing: 1px;
+  }
+
+  .header-ctas {
+    display: block;
+    column-gap: 24px;
+  }
+
+  button.rounded-button {
+    margin-top: 16px;
+  }
+  p {
+   
+    font-size: 16px;
+    line-height: 160%;
+    color: #ffffff90;
+    max-width: 100%;
+
+    }
+    .cls-1{
+      scale: 60%;
+      fill: #ededed;
+    }
+    svg{
+      position: absolute;
+      margin: auto;
+      width: 80px;
+      height: 80px;
+      margin-left: 28px;
+      margin-top: 27px;
+    }
+    video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+}
